@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+    <style>
+        .product {
+            margin: auto;
+            width: 80%;
+            height: 40%;
+        }
+
+        .product__images {
+            width: 50%;
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            gap: 8px;
+
+        }
+
+        .product__preview {
+            width: 100%;
+            height: 150px;
+            background-color: lightgreen;
+            grid-column: span 3;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+
+        .product__image {
+            background-color: lightgreen;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="product">
+        <div class="product__images">
+            <img src="" alt="Main Image" class="product__preview">
+            <img src="" alt="side image" class="product__image">
+            <img src="" alt="side image" class="product__image">
+            <img src="" alt="side image" class="product__image">
+        </div>
+        <div class="product__details">
+            <h1 class="product__name"></h1>
+            <p class="product__price"></p>
+            <p class="product__description"></p>
+            <button class="product__addToCart"></button>
+            <button class="product__buyNow"></button>
+        </div>
+    </main>
+</body>
+
+</html>

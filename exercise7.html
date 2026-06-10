@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        .card__container {
+            margin: auto;
+            width: 308px;
+            height: 90px;
+            display: grid;
+            background-color: aquamarine;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 43px 43px;
+            gap: 4px
+        }
+
+        .cards {
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #card__merge {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card__container">
+        <div class="cards" id="card__merge">card 1</div>
+        <div class="cards">card 2</div>
+        <div class="cards">card 3</div>
+        <div class="cards">card 4</div>
+        <div class="cards">card 5</div>
+    </div>
+</body>
+
+</html>
