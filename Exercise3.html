@@ -8,15 +8,25 @@
     <style>
         .navbar {
             width: 90%;
+            height: 50px;
             margin: auto;
+            padding: 4px 8px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            background-color: lightgray;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
         }
 
         .nav__logo {
             margin: 0;
-            background-color: lightcyan;
+            height: 16px;
+            padding: 8px 16px;
+            background-color: #B6ECD0;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 2px solid #A6CDBB;
         }
 
         .nav__menu {
@@ -27,22 +37,27 @@
             list-style: none;
             display: flex;
             justify-content: flex-end;
-            gap: 40px;
+            gap: 8px;
             margin: 0;
             padding: 0;
         }
 
         .nav__link {
             width: 15%;
+            height: 16px;
+            padding: 8px 16px;
+            font-size: 15px;
             text-align: center;
-            background-color: lightblue;
+            background-color: #C9DDFE;
+            border: 2px solid #A6BEE9;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
     <header class="navbar">
-        <h1 class="nav__logo">Exercise 3</h1>
+        <h1 class="nav__logo">Logo</h1>
         <nav class="nav__menu">
             <ul class="nav__list">
                 <li class="nav__link">menu 1</li>

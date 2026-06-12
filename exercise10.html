@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        .magazine {
+            width: 80%;
+            margin: auto;
+            gap: 16px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .main__story {
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 2px solid;
+            grid-column: span 3;
+        }
+
+        .story__card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            border: 2px solid;
+        }
+
+        .story__img {
+            height: 60px;
+        }
+
+        .story__title {
+            margin: 0;
+            padding: 4px;
+            flex: 1;
+            background-color: white;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .card--red {
+            background-color: #FDC3D1;
+            border-color: #f1a2b4;
+        }
+
+        .card--blue {
+            background-color: #C2DAFE;
+            border-color: #8ba0bf;
+        }
+
+        .card--green {
+            background-color: #B8EAC7;
+            border-color: #81af8f;
+        }
+
+        .card--yellow {
+            background-color: #FEE799;
+            border-color: #bdac74;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="magazine">
+        <div class="main__story card--red">Hero Story</div>
+        <div class="story__card card--green">
+            <div class="story__img"></div>
+            <p class="story__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="story__card card--blue">
+            <div class="story__img"></div>
+            <p class="story__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="story__card card--yellow">
+            <div class="story__img"></div>
+            <p class="story__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -9,28 +9,39 @@
         body {
             display: flex;
             gap: 8px;
+            height: inherit;
         }
 
-        aside {
+        .index__aside {
             flex: 1;
-            height: 90%;
-            background-color: aqua;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D9C9F6;
+            border: 2px solid #CAC3E3;
+            border-radius: 5px;
         }
 
-        main {
-            flex: 2;
-            height: 90%;
-            background-color: aquamarine;
+        .index__main {
+            flex: 3;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D7E7FE;
+            border: 2px solid #D0DDF0;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-    <aside>
-        aside
+    <aside class="index__aside">
+        <h2>SideBar</h2>
     </aside>
-    <main>
-        Main Content
+    <main class="index__main">
+        <h2>Main Content</h2>
     </main>
 </body>
 

@@ -9,28 +9,46 @@
         .cards__container {
             margin: auto;
             width: 90%;
-            height: 310px;
-            background-color: lightblue;
+            aspect-ratio: 1.5/1;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 10px;
+            gap: 2%;
         }
 
         .card {
             margin: 5px 5px;
-            background-color: aqua;
-            border: 2px solid;
+            border-radius: 8px;
+        }
+
+        .card--red {
+            background-color: #FEC1C8;
+            border: 2px solid #F9B0BB;
+        }
+
+        .card--blue {
+            background-color: #C3DBFD;
+            border: 2px solid #D7E8F7;
+        }
+
+        .card--green {
+            background-color: #C9ECCB;
+            border: 2px solid #B7DCBC;
+        }
+
+        .card--yellow {
+            background-color: #FAF1CD;
+            border: 2px solid #FEEBA9;
         }
     </style>
 </head>
 
 <body>
     <div class="cards__container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card card--red"></div>
+        <div class="card card--blue"></div>
+        <div class="card card--green"></div>
+        <div class="card card--yellow"></div>
     </div>
 </body>
 

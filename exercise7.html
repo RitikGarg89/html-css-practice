@@ -8,35 +8,60 @@
     <style>
         .card__container {
             margin: auto;
-            width: 308px;
-            height: 90px;
+            width: 75%;
+            aspect-ratio: 3/1;
+            /* height: 100px; */
             display: grid;
-            background-color: aquamarine;
-            grid-template-columns: 100px 100px 100px;
-            grid-template-rows: 43px 43px;
+            background-color: white;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 4px
         }
 
         .cards {
-            background-color: aqua;
-            border: 1px solid black;
             border-radius: 5px;
             text-align: center;
+            border: 2px solid;
         }
 
-        #card__merge {
+        .card--2colspan {
             grid-column: span 2;
+        }
+
+        .card--red {
+            background-color: #FDC3D1;
+            border-color: #f1a2b4;
+        }
+
+        .card--blue {
+            background-color: #C2DAFE;
+            border-color: #8ba0bf;
+        }
+
+        .card--green {
+            background-color: #B8EAC7;
+            border-color: #81af8f;
+        }
+
+        .card--yellow {
+            background-color: #FEE799;
+            border-color: #bdac74;
+        }
+
+        .card--purple {
+            background-color: #C6A7F3;
+            border-color: #AA90E3;
         }
     </style>
 </head>
 
 <body>
     <div class="card__container">
-        <div class="cards" id="card__merge">card 1</div>
-        <div class="cards">card 2</div>
-        <div class="cards">card 3</div>
-        <div class="cards">card 4</div>
-        <div class="cards">card 5</div>
+        <div class="cards card--2colspan card--red">card 1</div>
+        <div class="cards card--blue">card 2</div>
+        <div class="cards card--green">card 3</div>
+        <div class="cards card--yellow">card 4</div>
+        <div class="cards card--purple">card 5</div>
     </div>
 </body>
 

@@ -6,37 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 5</title>
     <style>
-        .language__container {
+        .tags__container {
             margin: auto;
             width: 90%;
             padding: 4px;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            background-color: aquamarine;
+            background-color: white;
+            border: 1.5px solid black;
+            border-radius: 5px;
         }
 
-        .language__card {
-            padding: 4px;
+        .tag {
+            padding: 4px 8px;
             text-align: center;
             background-color: aliceblue;
-            border: 1px solid black;
-            border-radius: 10px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+
+        .tag--red {
+            background-color: #FDC3D1;
+            border-color: #f1a2b4;
+        }
+
+        .tag--blue {
+            background-color: #C2DAFE;
+            border-color: #8ba0bf;
+        }
+
+        .tag--green {
+            background-color: #B8EAC7;
+            border-color: #81af8f;
+        }
+
+        .tag--yellow {
+            background-color: #FEE799;
+            border-color: #bdac74;
+        }
+
+        .tag--purple {
+            background-color: #E6D3FF;
+            border-color: #C7B5E1;
         }
     </style>
 </head>
 
 <body>
-    <div class="language__container">
-        <div class="language__card">HTML</div>
-        <div class="language__card">CSS</div>
-        <div class="language__card">JavaScript</div>
-        <div class="language__card">React</div>
-        <div class="language__card">Node js</div>
-        <div class="language__card">UI/UX</div>
-        <div class="language__card">Sass</div>
-        <div class="language__card">TypeScript</div>
-        <div class="language__card">Accessbility</div>
+    <div class="tags__container">
+        <div class="tag tag--red">HTML</div>
+        <div class="tag tag--blue">CSS</div>
+        <div class="tag tag--green">JavaScript</div>
+        <div class="tag tag--purple">React</div>
+        <div class="tag tag--yellow">Node js</div>
+        <div class="tag tag--blue">UI/UX</div>
+        <div class="tag tag--red">Sass</div>
+        <div class="tag tag--green">TypeScript</div>
+        <div class="tag tag--purple">Accessbility</div>
     </div>
 </body>
 

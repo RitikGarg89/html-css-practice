@@ -7,39 +7,36 @@
     <title>Exercise 8</title>
     <style>
         body {
-            margin: 5%;
+            margin: 10px;
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: 40px 320px 80px;
+            grid-template-rows: 10% 400px 80px;
             gap: 8px;
         }
 
-        header {
-            background-color: lightblue;
+        .index__header {
             grid-column: span 3;
             text-align: center;
             align-content: center;
-            border: 1px solid rgb(136, 208, 233);
-            border-radius: 10px;
+            border: 1px solid;
+            border-radius: 8px;
         }
 
-        aside {
-            background-color: lightslategray;
+        .index__sidebar {
             text-align: center;
             align-content: center;
-            border: 1px solid rgb(77, 88, 99);
-            border-radius: 10px;
+            border: 1px solid;
+            border-radius: 8px;
         }
 
-        main {
-            background-color: lightgreen;
+        .index__main {
             text-align: center;
             align-content: center;
-            border: 1px solid rgb(94, 240, 94);
-            border-radius: 10px;
+            border: 1px solid;
+            border-radius: 8px;
         }
 
-        .widgets {
+        .index__widgets {
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -48,32 +45,55 @@
         .widget {
             flex: 1;
             text-align: center;
-            background-color: lightyellow;
             align-content: center;
-            border: 1px solid yellow;
-            border-radius: 10px;
+            border: 1px solid;
+            border-radius: 8px;
         }
 
-        footer {
-            background-color: lightblue;
+        .index__footer {
             grid-column: span 3;
             text-align: center;
             align-content: center;
-            border: 1px solid rgb(136, 208, 233);
-            border-radius: 10px;
+            border: 1px solid;
+            border-radius: 8px;
+        }
+
+        .css--red {
+            background-color: #FDC3D1;
+            border-color: #f1a2b4;
+        }
+
+        .css--blue {
+            background-color: #C2DAFE;
+            border-color: #8ba0bf;
+        }
+
+        .css--green {
+            background-color: #B8EAC7;
+            border-color: #81af8f;
+        }
+
+        .css--yellow {
+            background-color: #FEE799;
+            border-color: #bdac74;
+        }
+
+        .css--purple {
+            background-color: #C6A7F3;
+            border-color: #AA90E3;
         }
     </style>
 </head>
 
 <body>
-    <header>Header</header>
-    <aside>aside</aside>
-    <main>Main</main>
-    <div class="widgets">
-        <div class="widget">Widget 1</div>
-        <div class="widget">Widget 2</div>
+    <header class="index__header css--blue">Header</header>
+    <aside class="index__sidebar css--purple">aside</aside>
+    <main class="index__main css--green">Main</main>
+    <div class="index__widgets">
+        <div class="widget css--yellow">Widget 1</div>
+        <div class="widget css--yellow">Widget 2</div>
     </div>
-    <footer>footer</footer>
+    <footer class="index__footer css--purple">footer</footer>
 </body>
 
 </html>
